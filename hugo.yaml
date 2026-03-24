@@ -1,0 +1,182 @@
+baseURL: "http://127.0.0.1:1313"
+languageCode: "en-us"
+title: "Wilson | DevOps Journey"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: about
+      name: About
+      title: About
+      url: /#about
+      weight: 1
+    - identifier: skills
+      name: Skills
+      title: Skills
+      url: /#skills
+      weight: 2
+    - identifier: projects
+      name: Projects
+      title: Projects
+      url: /#projects
+      weight: 3
+    - identifier: contact
+      name: Contact
+      title: Contact
+      url: /#contact
+      weight: 4
+
+params:
+  title: "Wilson | DevOps Engineer"
+  description: "Wilson's DevOps portfolio — learning in public, building real projects."
+  favicon: "/fav.png"
+
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Wilson"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: true
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Wilson."
+    subtitle: "Breaking into DevOps, building in public"
+    content: "A Second Line Support Engineer on a mission to break into DevOps. I'm learning Linux, Git, Python, Docker and cloud infrastructure from the ground up — and documenting every project along the way."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    button:
+      enable: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Wilson187
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I'm a Second Line Support Engineer with hands-on experience troubleshooting systems and supporting infrastructure. I'm now focused on transitioning into DevOps — learning the tools, building real projects, and documenting the journey openly.
+
+      I believe the best way to learn is by doing. Every project on this site is something I've built from scratch, from setting up CI/CD pipelines to provisioning cloud infrastructure with code.
+    skills:
+      enable: true
+      title: "Technologies I'm currently working with:"
+      items:
+        - "Linux / Bash"
+        - "Git / GitHub"
+        - "Python"
+        - "Docker"
+        - "Hugo"
+        - "CI/CD"
+
+  # Experience - disabled
+  experience:
+    enable: false
+
+  # Education - disabled
+  education:
+    enable: false
+
+  # Achievements - disabled
+  achievements:
+    enable: false
+
+  # Projects
+  projects:
+    enable: true
+    title: "Projects"
+    items:
+      - title: DevOps Portfolio Site
+        content: Built and deployed a personal portfolio site using Hugo, hosted on GitHub Pages with a custom domain. The deployment pipeline is automated with GitHub Actions.
+        image: /images/projects/profile.png
+        featured:
+          name: View Site
+          link: https://github.com/Wilson187
+        badges:
+          - "Hugo"
+          - "GitHub Actions"
+          - "Linux"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Wilson187
+
+  # Contact
+  contact:
+    enable: true
+    content: "I'm always open to connecting with others in the DevOps and infrastructure space. Feel free to reach out!"
+    btnName: "Email me"
+    btnLink: "mailto:your@email.com"
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: https://github.com/Wilson187
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: false
+    readTime:
+      enable: false
+    scrollprogress:
+      enable: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
